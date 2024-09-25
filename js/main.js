@@ -151,10 +151,10 @@ document.getElementById('donate-btn-qouta').addEventListener('click', function()
     if( isNaN(donateInputQuota) || donateInputQuota <= 0){
         return alert('Please Enter a Valid input')
     } else {
-        donateAmountElement.innerText = donateInputQuota.toFixed(2)
+        donateAmountElement.innerText = donateInputQuota.toFixed(0)
         const balance = mainBalance - donateInputQuota
         
-        mainBalanceElement.innerText = balance.toFixed(2)
+        mainBalanceElement.innerText = balance.toFixed(0)
 
         const totalDonate = donateAmountQuota + donateInputQuota
         donateAmountElement.innerText = totalDonate 
