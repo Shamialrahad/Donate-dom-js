@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- nav  -->
+    <div
+      class="navbar sticky top-0 p-2 lg:p-10 z-50 bg-gray-100/50 backdrop-blur-md"
+    >
+      <div class="navbar-start">
+        <a
+          href="#"
+          class="btn bg-lime-400 px-8 text-black border-0 normal-case text-xl font-bold hover:bg-slate-200"
+          >Blog</a
+        >
+      </div>
+      <div class="navbar-center flex">
+        <div class="flex gap-1 lg:gap-2 items-center">
+          <img src="./images/logo.png" alt="" />
+          <h3 class="font-bold text-black text-sm lg:text-xl">
+            <a href="index1.html">Donate Bangladesh</a>
+          </h3>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="flex gap-1 lg:gap-2 text-gray-600">
+          <img src="./images/coin.png" alt="" />
+          <h3 class="font-bold lg:text-xl">5500</h3>
+          <h3 class="font-bold lg:text-xl">BDT</h3>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div>
+      <h1 class="text-center font-bold text-2xl text-black">
+        Frequently Asked Questions About DOM
+      </h1>
+    </div>
+    <br />
+    <!-- Faq section  -->
+    <section class="m-4 md:m-0 md:w-9/12 md:mx-auto">
+      <div class="collapse bg-base-200 my-7">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the DOM?</div>
+        <div class="collapse-content bg-lime-300">
+          <p class="text-xl text-black">
+            The DOM (Document Object Model) is a programming interface that
+            allows you to interact with and manipulate the structure, style, and
+            content of HTML documents in a web page.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200 my-7">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element by its ID in the DOM?
+        </div>
+        <div class="collapse-content bg-violet-300">
+          <p class="text-xl text-black">
+            You can use document.getElementById("elementID") to select an
+            element by its ID.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200 my-7">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          How can you change the content of an HTML element using the DOM?
+        </div>
+        <div class="collapse-content bg-green-300">
+          <p class="text-xl text-black">
+            You can change the content using element.innerHTML = "New Content"
+            where element is the DOM element you want to modify.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200 my-7">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          What method is used to add a new element to the DOM?
+        </div>
+        <div class="collapse-content bg-orange-300">
+          <p class="text-xl text-black">
+            You can use document.createElement("tagName") to create a new
+            element, and then use parentElement.appendChild(newElement) to add
+            it to the DOM.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200 my-7">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          How can you remove an element from the DOM?
+        </div>
+        <div class="collapse-content bg-indigo-400">
+          <p class="text-xl text-black">
+            You can remove an element by selecting it and calling
+            element.remove() or using parentElement.removeChild(element).
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Today</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-white pb-10">
+    <!-- Navbar section  -->
+    <section class="backdrop-blur-md sticky top-0 z-50">
+      <div class="bg-gray-100/50 py-4">
+        <div class="container mx-auto navbar px-3 md:px-7">
+          <div class="navbar-start">
+            <a
+              href="./blog.html"
+              class="btn bg-lime-400 px-8 text-black border-0 normal-case text-xl font-bold hover:bg-slate-200"
+              >Blog</a
+            >
+          </div>
+          <div class="navbar-center space-x-3 flex flex-col sm:flex-row">
+            <img src="images/logo.png" alt="" class="w-8" />
+            <a class="font-bold text-black text-sm lg:text-xl"
+              >Donate Bangladesh</a
+            >
+          </div>
+          <div class="navbar-end">
+            <div class="amount flex space-x-2">
+              <div><img src="images/coin.png" alt="" /></div>
+              <p class="font-bold lg:text-xl">
+                <span id="main-balance">5500</span> BDT
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Button  -->
+      <div class="button-container text-center pb-8 mt-10 space-x-7">
+        <button
+          id="donation-btn"
+          class="btn bg-lime-400 px-8 text-black border-0 normal-case text-xl font-bold hover:bg-slate-200"
+        >
+          Donation
+        </button>
+
+        <button
+          id="history-btn"
+          class="btn bg-gray-100 m-5 px-8 text-gray-500 border-gray-300 normal-case text-xl font-bold hover:bg-slate-300"
+        >
+          History
+        </button>
+      </div>
+    </section>
+
+    <!-- Content Area -->
+    <section>
+      <div id="donation-content" class="container mx-auto pb-8 px-7">
+        <!-- Single Content Box  1-->
+        <div
+          class="content-area flex flex-col lg:flex-row gap-10 w-full p-5 border rounded-lg items-center mb-6"
+        >
+          <div class="image w-3/4">
+            <img src="images/d-1.png" alt="" class="w-full" />
+          </div>
+
+          <!-- Text Content Box -->
+          <div class="content w-full">
+            <div class="text">
+              <div
+                class="donation space-x-2 flex bg-gray-300 rounded-lg p-3 w-7/12 md:w-3/12 lg:4/12"
+              >
+                <img src="images/coin.png" alt="" />
+                <p class="font-bold text-black">
+                  <span id="donate-amount1">1000</span> BDT
+                </p>
+              </div>
+
+              <h2
+                id="donate-title"
+                class="font-bold text-black text-md md:text-xl mt-3 md:mt-6 mb-3 md:mb-6"
+              >
+                Donate for Flood at Noakhali, Bangladesh
+              </h2>
+              <p class="mb-8 text-md font-light text-black">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+
+              <input
+                id="donate-Input-Noakhali"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered outline-none w-full bg-transparent block mb-6"
+              />
+              <button
+                id="donate-btn-Noakhali"
+                class="btn bg-lime-400 border-none font-bold text-black hover:bg-slate-100 px-5 w-full text-2xl"
+              >
+                Donate Now
+              </button>
+
+              <!-- Modal  -->
+              <dialog id="my_modal_5" class="modal text-center">
+                <div class="modal-box bg-white">
+                  <h3 class="text-3xl my-5 font-bold text-black">Congrates!</h3>
+                  <img src="images/coin.png" alt="" class="mx-auto" />
+                  <p class="py-4 text-xl text-gray-500">
+                    You Have donate for HumanKind
+                  </p>
+                  <h3 class="text-lg font-bold text-black">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog" class="mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        id="close-modal"
+                        class="btn bg-slate-200 text-black border-none hover:bg-lime-300"
+                      >
+                        Close Confirmation
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Content Box  2-->
+        <div
+          class="content-area flex flex-col lg:flex-row gap-10 w-full p-5 border rounded-lg items-center mb-6"
+        >
+          <div class="image w-3/4">
+            <img src="images/d-2.png" alt="" class="w-full" />
+          </div>
+
+          <!-- Text Content Box -->
+          <div class="content w-full">
+            <div class="text">
+              <div
+                class="donation space-x-2 flex bg-gray-300 rounded-lg p-3 w-7/12 md:w-3/12 lg:4/12"
+              >
+                <img src="images/coin.png" alt="" />
+                <p class="font-bold text-black">
+                  <span id="donate-amount-feni">2000</span> BDT
+                </p>
+              </div>
+
+              <h2
+                id="donate-title2"
+                class="font-bold text-black text-md md:text-xl mt-3 md:mt-6 mb-3 md:mb-6"
+              >
+                Donate for Flood Relief in Feni,Bangladesh
+              </h2>
+              <p class="mb-8 text-md font-light text-black">
+                Help the people of Feni, Bangladesh, who are suffering from
+                devastating floods. Your donation can provide essential supplies
+                like food, clean water, and shelter to those affected. Every
+                contribution, big or small, can make a huge difference in
+                rebuilding lives and communities. Let's stand together for flood
+                relief!
+              </p>
+
+              <input
+                id="donate-Input-feni"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered outline-none w-full bg-transparent block mb-6"
+              />
+              <button
+                id="donate-btn-feni"
+                class="btn bg-lime-400 border-none font-bold text-black hover:bg-slate-100 px-5 w-full text-2xl"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Content Box  3-->
+        <div
+          class="content-area flex flex-col lg:flex-row gap-10 w-full p-5 border rounded-lg items-center mb-6"
+        >
+          <div class="image w-3/4">
+            <img src="images/d-3.png" alt="" class="w-full" />
+          </div>
+
+          <!-- Text Content Box -->
+          <div class="content w-full">
+            <div class="text">
+              <div
+                class="donation space-x-2 flex bg-gray-300 rounded-lg p-3 w-7/12 md:w-3/12 lg:4/12"
+              >
+                <img src="images/coin.png" alt="" />
+                <p class="font-bold text-black">
+                  <span id="donate-amount-quota">1200</span> BDT
+                </p>
+              </div>
+
+              <h2
+                id="donate-title3"
+                class="font-bold text-black text-md md:text-xl mt-3 md:mt-6 mb-3 md:mb-6"
+              >
+                Aid for Injured in the Quota Movement
+              </h2>
+              <p class="mb-8 text-md font-light text-black">
+                The Aid for Injured in the Quota Movement provided crucial
+                support to those harmed during protests advocating for reforms
+                in government job quotas. This assistance helped cover medical
+                expenses and offered financial relief to students and activists
+                injured while demanding equal opportunities and justice in
+                employment sectors.
+              </p>
+
+              <input
+                id="donate-Input-quota"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered outline-none w-full bg-transparent block mb-6"
+              />
+              <button
+                id="donate-btn-qouta"
+                class="btn bg-lime-400 border-none font-bold text-black hover:bg-slate-100 px-5 w-full text-2xl"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transaction History Section   -->
+
+    <section class="border-t-2">
+      <div
+        id="history-section"
+        class="container mx-auto px-7 hidden text-center"
+      >
+        <div id="history-section">
+          <div class="mb-4 text-lg md:text-2xl mt-4 text-black">
+            Transaction History
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js file  -->
+    <script src="js/function.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
